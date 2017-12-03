@@ -1,0 +1,9 @@
+.homepage {
+  color: white;
+  font-family: "Brush Script MT", cursive;
+  font-style: oblique;
+  font-size: 200%;
+}
+.homepage span{
+  background-color: tomato;
+}
