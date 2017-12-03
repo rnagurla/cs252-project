@@ -7,7 +7,6 @@
 .link1 span{
   background-color: tomato;
 }
-
 .link2 {
   color: white;
   font-family: "Brush Script MT", cursive;
@@ -15,7 +14,10 @@
   font-size: 200%;
   float:right;
 }
-
 .link2 span{
   background-color: tomato;
+}
+
+.bodyContent{
+  color: white;
 }
