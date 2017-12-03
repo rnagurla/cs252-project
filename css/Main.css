@@ -6,6 +6,10 @@ a:link {
     text-decoration: none;
 }
 
+body {
+    background-size: 100%
+}
+
 .login {
     float: right;
 }
