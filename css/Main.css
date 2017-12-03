@@ -2,8 +2,25 @@ p {
     color: red;
 
 }
+
+a {
+    color: black;
+}
+
+.logo {
+    color: white;
+    font-family: "Brush Script MT", cursive;
+    font-style: oblique;
+    font-size: 200%;
+}
+
+.logo span{
+  background-color: tomato;
+}
+
 a:link {
     text-decoration: none;
+    color: white;
 }
 
 body {
@@ -11,5 +28,13 @@ body {
 }
 
 .login {
-    float: right;
+    color: white;
+    font-family: "Brush Script MT", cursive;
+    font-style: oblique;
+    font-size: 200%;
+    float:right;
+}
+
+.login span{
+  background-color: tomato;
 }
