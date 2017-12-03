@@ -2,3 +2,10 @@ p {
     color: red;
 
 }
+a:link {
+    text-decoration: none;
+}
+
+.login {
+    float: right;
+}
