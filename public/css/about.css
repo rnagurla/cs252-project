@@ -22,6 +22,6 @@
   font-style: oblique;
   font-size: 200%;
 }
-.link_github span {
-  background-color: none;
+.link_github span:link, .link_github span:hover, .link_github span:hover {
+  color: white;
 }
