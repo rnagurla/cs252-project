@@ -9,7 +9,7 @@ a {
 
 .logo {
     color: white;
-    font-family: "Brush Script MT", cursive;
+    font-family: verdana;
     font-style: oblique;
     font-size: 200%;
 }
@@ -29,7 +29,7 @@ body {
 
 .login {
     color: white;
-    font-family: "Brush Script MT", cursive;
+    font-family: verdana;
     font-style: oblique;
     font-size: 200%;
     float:right;
