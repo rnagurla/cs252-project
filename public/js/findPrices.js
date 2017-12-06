@@ -13,4 +13,6 @@ function myFunc() {
     alert(start);
     alert(destination);
 
+    document.location = 'Results.html';
+
 }
