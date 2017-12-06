@@ -1,6 +1,6 @@
 .link1 {
   color: white;
-  font-family: "Brush Script MT", cursive;
+  font-family: verdana;
   font-style: oblique;
   font-size: 200%;
 }
@@ -9,7 +9,7 @@
 }
 .link2 {
   color: white;
-  font-family: "Brush Script MT", cursive;
+  font-family: verdana;
   font-style: oblique;
   font-size: 200%;
   float:right;
