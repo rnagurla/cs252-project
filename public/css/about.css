@@ -16,3 +16,12 @@
 .link_about_stats span {
   background-color: tomato;
 }
+.link_github {
+  color: white;
+  font-family: verdana;
+  font-style: oblique;
+  font-size: 200%;
+}
+.link_github span {
+  background-color: none;
+}
