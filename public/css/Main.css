@@ -12,6 +12,7 @@ a {
     font-family: verdana;
     font-style: oblique;
     font-size: 200%;
+    background-color: tomato;
 }
 
 .logo span{
