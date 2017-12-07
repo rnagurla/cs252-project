@@ -37,8 +37,7 @@ alert(url);
 
 
 function processRequest() {
-    if (xhr.readyState == 4 /*&& xhr.status == 200*/) {
-        alert(xhr.status);
+    if (xhr.readyState == 4 && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
          alert(xhr.responseText);
     }
@@ -47,13 +46,17 @@ function processRequest() {
 function uberPrices() {
 
     uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
+    uber_price = uber_price.toFixed(2);
+
 
 }
 
 function lyftPrices() {
-    lyft_price = 1.9 + 0.9 + 0.09*time + 0.9*distance;
+    lyft_price = 3.7 + 0.2*time + 1.2*distance;
+    lyft_price = lyft_price.toFixed(2);
 }
 
 function taxi() {
     taxi_price = 3.5 + 3*(distance);
+    taxi_price = taxi_price.toFixed(2);
 }
