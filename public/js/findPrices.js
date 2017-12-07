@@ -29,7 +29,7 @@ async function prices() {
     uberPrices();
     lyftPrices();
     taxi();
-
+    time = time.toFixed(2);
 //    alert(taxi_price);
 //    alert(uber_price);
 //    alert(lyft_price);

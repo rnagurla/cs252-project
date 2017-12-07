@@ -49,10 +49,14 @@
 							<img src="./img/uber.jpg" alt="img1" style="width:100%">
 							<div class="caption">
 								<center>
-									<p id="uber"></p>
-										<script>
-											document.getElementById("uber").innerHTML = this.uber_price;
-										</script>
+									price = <p id="uber"></p>
+									time of trip = <p id="time"></p>
+									<script>
+										document.getElementById("time").innerHTML = this.time;
+									</script>
+									<script>
+										document.getElementById("uber").innerHTML = this.uber_price;
+									</script>
 								</center>
 							</div>
 					</div>
@@ -64,7 +68,11 @@
 							<img src="./img/lyft.png" alt="img2" style="width:100%">
 							<div class="caption">
 								<center>
-									<p id="lyft"></p>
+									price = <p id="lyft"></p>
+									time of trip = <p id="time2"></p>
+									<script>
+										document.getElementById("time2").innerHTML = this.time;
+									</script>
 									<script>
 										document.getElementById("lyft").innerHTML = this.lyft_price;
 									</script>
@@ -79,7 +87,11 @@
 							<img src="./img/taxi.png" alt="img3" style="width:100%">
 							<div class="caption">
 								<center>
-									<p id="taxi"></p>
+									<p id="taxi">price =</p>
+									time of trip = <p id="time3"></p>
+									<script>
+										document.getElementById("time3").innerHTML = this.time;
+									</script>
 									<script>
 										document.getElementById("taxi").innerHTML = this.taxi_price;
 									</script>
