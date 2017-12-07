@@ -15,6 +15,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/findPrices.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+    </body>
 	</header>
 
 
@@ -32,16 +35,17 @@
   }
 </script> --->
 
-    <form name="input" id="input">
+    <!---<form name="input" id="input"> --->
         &emsp;Start Location &nbsp; &nbsp;
-        <input type="text" name="start" id="start" size="20" maxlength="15">
+        <input type="text" name="start" id="start" size="40">
 
         <!--<form name="Name" id="Name"> -->
         &emsp;Destination &nbsp; &nbsp; &nbsp; &nbsp;
-        <input type="text" name="destination" id="destination" size="20" maxlength="15">
-    </form>
+        <input type="text" name="destination" id="destination" size="40">
+    <!---</form> --->
     <button onclick="myFunc()">Ride!<button>
-    <a href="./About.html">About Us</a>
+
+
 
 </body>
 
@@ -51,5 +55,25 @@
     <a href="./stats.html" style="text-decoration: none"<h2 class="logo">Statistics</h2></a>
   </center>
 </footer>
+
+<script>
+	$(document).ready(function () {
+		var _control = $('input[name="start"]')[0];
+		return new google.maps.places.Autocomplete(_control, {
+			types: ["geocode"]
+		});
+	});
+</script>
+
+<script>
+	$(document).ready(function () {
+		var _control = $('input[name="destination"]')[0];
+		return new google.maps.places.Autocomplete(_control, {
+			types: ["geocode"]
+		});
+	});
+</script>
+
+</body>
 
 </html>
