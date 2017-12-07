@@ -49,5 +49,5 @@ function lyftPrices() {
 }
 
 function taxi() {
-
+    taxi_price = 3.5 + 3*(distance);
 }
