@@ -22,7 +22,7 @@ function myFunc() {
     uberPrices();
     lyftPrices();
     taxi();
-    var url = "https://maps.googleapis.com/maps/api/directions/origin=" + start + "&destination=" + destination + "&key=AIzaSyDJBmjA5VQP8dtPI9MfCyub-DAXjm5jvF0";
+    var url = "https://maps.googleapis.com/maps/api/directions/json?origin=" + start + "&destination=" + destination + "&key=AIzaSyDJBmjA5VQP8dtPI9MfCyub-DAXjm5jvF0";
 alert(url);
     xhr.open('GET', url, true);
     xhr.send();
