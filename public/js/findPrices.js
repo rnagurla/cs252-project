@@ -7,18 +7,12 @@ var xhr = new XMLHttpRequest();
 
 
 function myFunc() {
-    alert("js working");
-
     var s = document.getElementById('start');
     var d = document.getElementById('destination');
 
     start = s.value;
     destination = d.value;
 
-    //alert(start);
-//    alert(destination);
-
-//    document.location = 'Results.html';
     uberPrices();
     lyftPrices();
     taxi();
