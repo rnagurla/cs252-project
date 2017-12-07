@@ -2,12 +2,27 @@ var start;
 var destination;
 var distance = 20;
 var taxi_price;
+<<<<<<< HEAD
 var uber_price = 0;
+=======
+var uber_price = 20;
+>>>>>>> acb1fb8920a122f2265d3144f74a67db05db6a96
 var lyft_price;
 var time;
 var xhr = new XMLHttpRequest();
 
+<<<<<<< HEAD
 function ride() {
+=======
+
+function sleep(ms){
+  return new Promise(resolve => setTimeout(resolve,ms));
+}
+
+async function myFunc() {
+    var s = document.getElementById('start');
+    var d = document.getElementById('destination');
+>>>>>>> acb1fb8920a122f2265d3144f74a67db05db6a96
     var dis = document.getElementById('distance');
     distance = dis.value;
     localStorage.setItem("storageName", distance);
@@ -25,7 +40,12 @@ async function myFunc() {
     uberPrices();
     lyftPrices();
     taxi();
+<<<<<<< HEAD
 
+=======
+    await sleep(200);
+    alert(uber_price);
+>>>>>>> acb1fb8920a122f2265d3144f74a67db05db6a96
 //    alert(taxi_price);
 //    alert(uber_price);
 //    alert(lyft_price);
@@ -51,8 +71,9 @@ function processRequest() {
 
 function uberPrices() {
 
-    uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
-    uber_price = uber_price.toFixed(2);
+    this.uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
+    this.uber_price = uber_price.toFixed(2);
+    alert(this.uber_price);
 
 
 }
