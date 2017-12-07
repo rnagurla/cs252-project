@@ -14,10 +14,33 @@
   font-size: 200%;
   float:right;
 }
+
 .link2 span{
   background-color: tomato;
 }
 
 .bodyContent{
   color: white;
+}
+
+.link_stats_stats {
+  color: white;
+  font-family: verdana;
+  font-style: oblique;
+  font-size: 200%;
+}
+
+.link_stats_stats span{
+  background-color: tomato;
+}
+
+.link_stats_about {
+  color: white;
+  font-family: verdana;
+  font-style: oblique;
+  font-size: 200%;
+}
+
+.link_stats_about span{
+  background-color: tomato;
 }
