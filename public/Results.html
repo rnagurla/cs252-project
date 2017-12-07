@@ -3,9 +3,6 @@
 	<head>
 		<title>Catch-A-Ride</title>
 
-		<!-- Assigns an image to the tab! -->
-    <link rel="icon" href="./img/CARLOGO.jpg"/>
-
 		<style>
 			#map {
 			 height: 400px;
@@ -30,10 +27,6 @@
     <!-- Calling libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	</head>
-
-	<body background="./img/resultsBackground.jpg" style="background-size:100%" >
 	<script>
 		distance = localStorage.getItem("distance");
 	</script>
@@ -46,22 +39,20 @@
 		<a href="./index.html" style="text-decoration: none"<h2 class="link1"><span>Catch-A-Ride</span></h2></a>
 		<a href="./Login.html" style="text-decoration: none"<h2 class="link2"><span>Signup/Login</span></h2></a>
 
+		<script>prices()</script>
 		<div class="resultsContainer">
 			<!-- A single row is added to the page and is split into three columns -->
 			<div class="row">
 				<!-- Column 1 -->
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="https://www.uber.com/" target="_blank">
 							<img src="./img/uber.jpg" alt="img1" style="width:100%">
-						</a>
 							<div class="caption">
 								<center>
-									<p> Test Text
-										<script type="text/javascript">
-        						document.write(number)
-      							</script>
-									</p>
+									<p id="uber"></p>
+										<script>
+											document.getElementById("uber").innerHTML = this.uber_price;
+										</script>
 								</center>
 							</div>
 					</div>
@@ -70,12 +61,9 @@
 				<!-- Column 2 -->
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="https://www.lyft.com/" target="_blank">
 							<img src="./img/lyft.png" alt="img2" style="width:100%">
-						</a>
 							<div class="caption">
 								<center>
-									<p>space available for text here</p>
 									<p id="lyft"></p>
 									<script>
 										document.getElementById("lyft").innerHTML = this.lyft_price;
@@ -88,9 +76,7 @@
 				<!-- Column 3 -->
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="https://www.1800taxicab.com/" target="_blank">
 							<img src="./img/taxi.png" alt="img3" style="width:100%">
-						</a>
 							<div class="caption">
 								<center>
 									<p id="taxi"></p>
