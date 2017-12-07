@@ -8,12 +8,12 @@ var time;
 var xhr = new XMLHttpRequest();
 
 function ride() {
-    alert("here");
+//    alert("here");
     var dis = document.getElementById('distance');
     distance = dis.value;
-    alert("not here");
+//    alert("not here");
     localStorage.setItem("distance", distance);
-    alert("here");
+//    alert("here");
     document.location = 'Results.html';
 }
 
@@ -56,7 +56,7 @@ function uberPrices() {
 
     this.uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
     this.uber_price = uber_price.toFixed(2);
-    alert(this.uber_price);
+//    alert(this.uber_price);
 
 
 }
