@@ -2,13 +2,17 @@ var start;
 var destination;
 var distance;
 var taxi_price;
-var uber_price;
+var uber_price = 20;
 var lyft_price;
 var time;
 var xhr = new XMLHttpRequest();
 
 
-function myFunc() {
+function sleep(ms){
+  return new Promise(resolve => setTimeout(resolve,ms));
+}
+
+async function myFunc() {
     var s = document.getElementById('start');
     var d = document.getElementById('destination');
     var dis = document.getElementById('distance');
@@ -20,6 +24,8 @@ function myFunc() {
     uberPrices();
     lyftPrices();
     taxi();
+    await sleep(200);
+    alert(uber_price);
 //    alert(taxi_price);
 //    alert(uber_price);
 //    alert(lyft_price);
@@ -45,8 +51,9 @@ function processRequest() {
 
 function uberPrices() {
 
-    uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
-    uber_price = uber_price.toFixed(2);
+    this.uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
+    this.uber_price = uber_price.toFixed(2);
+    alert(this.uber_price);
 
 
 }
