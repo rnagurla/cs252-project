@@ -20,11 +20,11 @@ function myFunc() {
     uberPrices();
     lyftPrices();
     taxi();
-    alert(taxi_price);
-    alert(uber_price);
-    alert(lyft_price);
+//    alert(taxi_price);
+//    alert(uber_price);
+//    alert(lyft_price);
     var url = "https://maps.googleapis.com/maps/api/directions/json?origin=" + start + "&destination=" + destination + "&key=AIzaSyDJBmjA5VQP8dtPI9MfCyub-DAXjm5jvF0";
-alert(url);
+//    alert(url);
     xhr.open('GET', 'https://api.uber.com/v1.2/estimates/price?server_token=dbdUaCNIVpwYDlb_hSSumhsT-4wN7Sy8gH0Yj-gt&start_latitude=37.7752315&start_longitude=-122.418075&end_latitude=37.7752415&end_longitude=-122.518075');
 //    xhr.setRequestHeader("Authorization", "Token dbdUaCNIVpwYDlb_hSSumhsT-4wN7Sy8gH0Yj-gt");
 
