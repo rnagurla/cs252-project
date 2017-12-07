@@ -5,6 +5,13 @@
 	<head>
 		<title>Catch-A-Ride</title>
 
+		<style>
+			#map {
+			 height: 400px;
+			 width: 100%;
+			}
+	 </style>
+
 		<!-- Choose character set UTF-8 -->
     <meta charset="utf-8">
 
@@ -73,6 +80,26 @@
 
 		<div class="mapContainer">
 
+<<<<<<< HEAD
+			<h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.4277295, lng: -86.91699160000002};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJBmjA5VQP8dtPI9MfCyub-DAXjm5jvF0&callback=initMap">
+    </script>
+=======
 			<div id="map"></div>
 			<script>
 				function initMap() {
@@ -91,15 +118,17 @@
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJBmjA5VQP8dtPI9MfCyub-DAXjm5jvF0&callback=initMap">
 			</script>
 
+>>>>>>> 7e20c95c87107f2fc548f5d867a5fad45364f44a
 		</div> <!-- End of mapContainer -->
 
 	</body>
 
+<footer>
 	<div class="footer">
 	  <center>
 	    <a href="./About.html" style="text-decoration: none"<h2 class="link_Results_about"><span>About Us</span></h2></a>
 	    <a href="./stats.html" style="text-decoration: none"<h2 class="link_Results_stats"><span>Statistics</span></h2></a>
 	  </center>
 	</div>
-
+</footer>
 </html>
