@@ -1,6 +1,21 @@
 <html>
     <header>
 		<title>Catch-A-Rides</title>
+
+    <style>
+
+.menu {
+    font-family: verdana;
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+</style>
+
 		<link rel="stylesheet" type="text/css" href="./css/Main.css">
         <!-- Choose character set UTF-8 -->
         <meta charset="utf-8">
@@ -36,20 +51,22 @@
 </script> --->
 
     <!---<form name="input" id="input"> --->
-        &emsp;Start Location &nbsp; &nbsp;
-        <input type="text" name="start" id="start" size="40">
+
+    <center>
+    <div class="menu">
+        <p>&emsp;Start Location &nbsp; &nbsp;
+        <input type="text" name="start" id="start" size="40"></p>
 
         <!--<form name="Name" id="Name"> -->
-        &emsp;Destination &nbsp; &nbsp; &nbsp; &nbsp;
-        <input type="text" name="destination" id="destination" size="40">
+        <p>&emsp;&emsp;&emsp;Destination &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" name="destination" id="destination" size="40"></p>
 
-        &emsp;Distance &nbsp; &nbsp;
-        <input type="text" name="distance" id="distance" size="40">
-    <!---</form> --->
-    <button onclick="myFunc()">Ride!</button>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;Distance &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="distance" id="distance" size="40"></p>
 
-
-
+      <!---</form> --->
+      <button onclick="myFunc()">Ride!</button>
+    </div>
+  </center>
 </body>
 
 <script>
