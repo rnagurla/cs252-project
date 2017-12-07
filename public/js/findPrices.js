@@ -32,7 +32,7 @@ alert(url);
     xhr.send();
     xhr.addEventListener("readystatechange", processRequest, false);
 
-    //document.location = 'Results.html';
+    document.location = 'Results.html';
 }
 
 
