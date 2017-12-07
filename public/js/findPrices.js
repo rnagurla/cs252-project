@@ -8,12 +8,16 @@ var time;
 var xhr = new XMLHttpRequest();
 
 function ride() {
+//    alert("here");
     var dis = document.getElementById('distance');
     distance = dis.value;
-    localStorage.setItem("storageName", distance);
+//    alert("not here");
+    localStorage.setItem("distance", distance);
+//    alert("here");
+    document.location = 'Results.html';
 }
 
-async function myFunc() {
+async function prices() {
 //    var s = document.getElementById('start');
 //    var d = document.getElementById('destination');
 //    var dis = document.getElementById('distance');
@@ -38,7 +42,6 @@ async function myFunc() {
     xhr.send();
     xhr.addEventListener("readystatechange", processRequest, false);
 
-    document.location = 'Results.html';
 }
 
 
@@ -53,7 +56,7 @@ function uberPrices() {
 
     this.uber_price = 2.2 + 2 + 1.26*distance + 0.2*time;
     this.uber_price = uber_price.toFixed(2);
-    alert(this.uber_price);
+//    alert(this.uber_price);
 
 
 }
