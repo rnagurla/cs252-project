@@ -1,5 +1,6 @@
 var start;
 var destination;
+var distance
 var taxi_price;
 var uber_price;
 var lyft_price;
@@ -18,9 +19,8 @@ function myFunc() {
     taxi();
     var url = "https://maps.googleapis.com/maps/api/directions/json?origin=" + start + "&destination=" + destination + "&key=AIzaSyDJBmjA5VQP8dtPI9MfCyub-DAXjm5jvF0";
 alert(url);
-    xhr.open('GET', 'https://api.uber.com/v1.2/products?latitude=37.7759792&longitude=-122.41823', true);
-    xhr.setRequestHeader("Authorization", "Token ")
-    console.log('OPENED', xhr.status);
+    xhr.open('GET', 'https://api.uber.com/v1.2/estimates/price?server_token=dbdUaCNIVpwYDlb_hSSumhsT-4wN7Sy8gH0Yj-gt&start_latitude=37.7752315&start_longitude=-122.418075&end_latitude=37.7752415&end_longitude=-122.518075');
+//    xhr.setRequestHeader("Authorization", "Token dbdUaCNIVpwYDlb_hSSumhsT-4wN7Sy8gH0Yj-gt");
 
 
     xhr.send();
@@ -29,13 +29,6 @@ alert(url);
     //document.location = 'Results.html';
 }
 
-xhr.onprogress = function () {
-  console.log('LOADING', xhr.status);
-};
-
-xhr.onload = function () {
-  console.log('DONE', xhr.status);
-};
 
 function processRequest() {
     if (xhr.readyState == 4 /*&& xhr.status == 200*/) {
@@ -56,5 +49,5 @@ function lyftPrices() {
 }
 
 function taxi() {
-
+    taxi_price = 3.5 + 3*(distance);
 }
